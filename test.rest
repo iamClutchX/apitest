@@ -1,0 +1,70 @@
+### 
+# @name createInstitution
+POST http://localhost:5000/api/institutions HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Millennium Group of Institutions, Bhopal",
+    "address": "Millennium Campus, Nathu Barkheda Road Near Neelbad Chouraha Bhopal M.P. 462044",
+    "contact": "0755-2525100, 9109179112",
+    "city": "Bhopal",
+    "state": "Madhya Pradesh",
+    "image": [
+        "https://res.cloudinary.com/dcgre5gxz/image/upload/v1686713300/College/millenium1.jpg",
+        "https://res.cloudinary.com/dcgre5gxz/image/upload/v1686713300/College/millenium2.jpg",
+        "https://res.cloudinary.com/dcgre5gxz/image/upload/v1686713300/College/millenium3.jpg",
+        "https://res.cloudinary.com/dcgre5gxz/image/upload/v1686713300/College/millenium4.jpg"
+    ],
+    "courses": [
+        {
+            "courseName": "Diploma (Polytechnic)",
+            "fee": 25000,
+            "eligibility": "10th Pass"
+        },
+        {
+            "courseName": "B.Tech",
+            "fee": 50000,
+            "eligibility": "12th Pass"
+        },
+        {
+            "courseName": "M.Tech",
+            "fee": 50000,
+            "eligibility": "B.Tech"
+        },
+        {
+            "courseName": "MBA",
+            "fee": 50000,
+            "eligibility": "Graduation"
+        },
+        {
+            "courseName": "MCA",
+            "fee": 50000,
+            "eligibility": "Graduation"
+        }
+    ],
+    "branches": [
+        {
+            "name": "BE/B.Tech",
+            "disciplines": "Computer Science Engineering, Data Science, Artificial Intelligence , Machine Learning, Mechanical Engineering, Civil Engineering, Electronics Engineering, Electrical Engineering"
+        },
+        {
+            "name": "Diploma",
+            "disciplines": "Computer Science Engineering, Mechanical Engineering, Civil Engineering, Electronics Engineering, Electrical Engineering"
+        },
+        {
+            "name": "MBA",
+            "disciplines": "Marketing, Finance, Human Resource, International Business, Business Analytics"
+        },
+        {
+            "name": "MCA",
+            "disciplines": "Computer Application"
+        },
+        {
+            "name": "M.Tech",
+            "disciplines": "Computer Science Engineering, Mechanical Engineering, Civil Engineering, Electronics Engineering, Electrical Engineering"
+        }
+    ],
+    "message": "Welcome to Millennium Group of Institutions, Bhopal...",
+    "Details": "Millennium at a Glance. Welcome to MGI - The Institutes that make a difference...",
+    "featured": true
+}

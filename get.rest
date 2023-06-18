@@ -1,0 +1,48 @@
+### Get all programs of an institution
+GET http://localhost:5000/api/programs/648e8ee545c26fe50f33127d/programs
+Accept: application/json
+
+# ### Create a new program in an institution
+# POST http://localhost:3000/api/institutions/<id>/programs
+# Content-Type: application/json
+
+# {
+#   "name": "New Program",
+#   "disciplines": "New Disciplines"
+# }
+
+# ### Get a specific program of an institution
+# GET http://localhost:3000/api/institutions/<id>/programs/<programId>
+# Accept: application/json
+
+# ### Get all courses of a program in an institution
+# GET http://localhost:3000/api/institutions/<id>/programs/<programId>/courses
+# Accept: application/json
+
+# ### Create a new course in a program of an institution
+# POST http://localhost:3000/api/institutions/<id>/programs/<programId>/courses
+# Content-Type: application/json
+
+# {
+#   "courseName": "New Course",
+#   "fee": 10000,
+#   "eligibility": "New Eligibility"
+# }
+
+# ### Get a specific course of a program in an institution
+# GET http://localhost:3000/api/institutions/<id>/programs/<programId>/courses/<courseId>
+# Accept: application/json
+
+# ### Update a specific course of a program in an institution
+# PUT http://localhost:3000/api/institutions/<id>/programs/<programId>/courses/<courseId>
+# Content-Type: application/json
+
+# {
+#   "courseName": "Updated Course",
+#   "fee": 12000,
+#   "eligibility": "Updated Eligibility"
+# }
+
+# ### Delete a specific course of a program in an institution
+# DELETE http://localhost:3000/api/institutions/<id>/programs/<programId>/courses/<courseId>
+# Accept: application/json
